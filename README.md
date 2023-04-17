@@ -2,36 +2,35 @@
 
 1] Create Users app:
 
-
-   1. Create models:
-      - Model Name: User(AbstractUser)
-      - Fields(All fields are mandatory):
-        1. email(unique=True)
-        2. first_name 	- CharField
-        3.last_name 	- CharField
+      1. Create models:
+         - Model Name: User(AbstractUser)
+         - Fields(All fields are mandatory):
+            1. email(unique=True)
+            2. first_name 	- CharField
+            3.last_name 	- CharField
    
-   2. Create User CRUD API
+      2. Create User CRUD API
    
-          1] Create/POST API
-            - Should be accessible by anyone.
-            - Assign the default Group to the user as Admin while creating every new user.
+                1] Create/POST API
+                  - Should be accessible by anyone.
+                  - Assign the default Group to the user as Admin while creating every new user.
 
-          2] Read/GET API
-             - Super User is able to see all users' details.
-             - Admin should only read his own details, write a permission which only returns Admin’s logged-in user details.
-             - Password field should be hidden.
-             - The Address should return the user's Address object with all fields.
+                2] Read/GET API
+                   - Super User is able to see all users' details.
+                   - Admin should only read his own details, write a permission which only returns Admin’s logged-in user details.
+                   - Password field should be hidden.
+                   - The Address should return the user's Address object with all fields.
 
-         3] Update/PUT/PATCH API
-            - Admin should be able to update only his details.
-            - Super User can update all users' details.
+               3] Update/PUT/PATCH API
+                  - Admin should be able to update only his details.
+                  - Super User can update all users' details.
 
-         4] DELETE API
-            - Super User is able to delete all user accounts..
-            - Admin shouldn't be able to delete his/others user accounts.
+               4] DELETE API
+                  - Super User is able to delete all user accounts..
+                  - Admin shouldn't be able to delete his/others user accounts.
         
-   3. Write CRUD Unit Test cases for Users.
-      - CRUD unit tests  for Super User/Admin/Anonymous users.
+      3. Write CRUD Unit Test cases for Users.
+         - CRUD unit tests  for Super User/Admin/Anonymous users.
 
         
 2] Write a Signal to add the default User Group as “Admin” for every new user creation.
