@@ -1,14 +1,14 @@
 # FeedManagementProject
 
 1] Create Users app:
+
    1. Create models:
       - Model Name: User(AbstractUser)
       - Fields(All fields are mandatory):
         1. email(unique=True)
         2. first_name 	- CharField
         3.last_name 	- CharField
-  
-  
+   
    2. Create User CRUD API
           1] Create/POST API
             - Should be accessible by anyone.
@@ -44,6 +44,7 @@
 
 
 5] Create Address app:
+
     1. Create models: 
        - Model Name: Address
        - Fields(All fields are mandatory):
@@ -76,6 +77,7 @@
 
 
 6] Create Feeds app:
+
     1. Create models:
         - Model Name: Feed
         - Fields(All fields are mandatory):
