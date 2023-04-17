@@ -2,6 +2,7 @@
 
 1] Create Users app:
 
+
    1. Create models:
       - Model Name: User(AbstractUser)
       - Fields(All fields are mandatory):
@@ -10,6 +11,7 @@
         3.last_name 	- CharField
    
    2. Create User CRUD API
+   
           1] Create/POST API
             - Should be accessible by anyone.
             - Assign the default Group to the user as Admin while creating every new user.
